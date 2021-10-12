@@ -7,8 +7,8 @@ import "strings"
 
 v = strings.split(tfplan.terraform_version, ".")
 
-version_major = int(v[1])
-version_minor = int(v[2])
+version_major = int(v[0])
+version_minor = int(v[1])
 
 # A normal version number MUST take the form X.Y.Z where X, Y, and Z are non-negative integers, 
 # and MUST NOT contain leading zeroes. 
