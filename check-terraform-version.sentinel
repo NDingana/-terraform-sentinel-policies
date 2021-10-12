@@ -20,6 +20,8 @@ version_minor = int(v[2])
 # Every Sentinel policy must have a main rule. 
 # This is the rule that is evaluated to determine the result of a policy.
 main = rule {
+
+    # required_version = "~> 1.0.2"  is what we are using in our TF project
     #version_major is 14 and version_minor >= 1
-    version_major >= 1
+    version_major = 1 
 }
